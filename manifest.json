@@ -1,0 +1,12 @@
+{
+  "name": "eMag login stop",
+  "version": "1.0",
+  "description": "Removes annoying bar on bottom to login",
+  "permissions": ["https://emag.hu/", "https://emag.bg/", "https://emag.ro/"],
+  "content_scripts": [{
+	"matches": ["https://*.emag.hu/*", "https://*.emag.bg/*", "https://*.emag.ro/*"],
+	"css": ["emag.css"],
+	"run_at": "document_idle"
+	}],
+  "manifest_version": 2
+}
